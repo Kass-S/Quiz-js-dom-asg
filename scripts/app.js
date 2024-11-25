@@ -20,19 +20,12 @@ let box8 = document.getElementById('box8');
 let boxInput = '';
 let colorInput = '';
 
+
 changeColorBtn.addEventListener('click', function(){
     boxInput = boxNumberInput.value;
     colorInput = boxColorInput.value;
 
-    box1Color();
-    box2Color();
-    box3Color();
-    box4Color();
-    box5Color();
-    box6Color();
-    box7Color();
-    box8Color();
-    
+    boxColor(); 
 });
 
 resetColorsBtn.addEventListener('click', function(){
@@ -46,236 +39,235 @@ resetColorsBtn.addEventListener('click', function(){
     box8.className = 'boxSize ' + 'text-center';
 });
 
-function box1Color(){
-    if(boxInput.toLowerCase() == '1' || boxInput.toLowerCase() == 'one' || boxInput.toLowerCase() == 'box 1'){
-        switch(colorInput.toLowerCase()){
-            case 'red':
-                box1.className = 'boxRed' + ' boxSize ' + 'text-center';
-                break;
+
+
+function boxColor(){
+    switch(boxInput.toLowerCase()){
+        case 'one':
+        case '1':
+            switch(colorInput.toLowerCase()){
+                case 'red':
+                    box1.className = 'boxRed' + ' boxSize ' + 'text-center';
+                    break;
+                
+                case 'blue': 
+                    box1.className = 'boxBlue' + ' boxSize ' + 'text-center';
+                    break;
+        
+                case 'purple': 
+                    box1.className = 'boxPurple' + ' boxSize ' + 'text-center';
+                    break;
+        
+                case 'brown': 
+                    box1.className = 'boxBrown' + ' boxSize ' + 'text-center';
+                    break;
+        
+                case 'yellow': 
+                    box1.className = 'boxYellow' + ' boxSize ' + 'text-center';
+                    break;
+
+                default:
+                    alert('That is not a valid color. Please enter a valid color.');
+                    break;
+            }
+            break;
+
+        case 'two':
+        case '2':
+            switch(colorInput.toLowerCase()){
+                case 'red':
+                    box2.className = 'boxRed' + ' boxSize ' + 'text-center';
+                    break;
+                
+                case 'blue': 
+                    box2.className = 'boxBlue' + ' boxSize ' + 'text-center';
+                    break;
+        
+                case 'purple': 
+                    box2.className = 'boxPurple' + ' boxSize ' + 'text-center';
+                    break;
+        
+                case 'brown': 
+                    box2.className = 'boxBrown' + ' boxSize ' + 'text-center';
+                    break;
+        
+                case 'yellow': 
+                    box2.className = 'boxYellow' + ' boxSize ' + 'text-center';
+                    break;
+    
+                default:
+                    alert('That is not a valid color. Please enter a valid color.');
+            }
+            break;
+
+        case 'three':
+        case '3':
+            switch(colorInput.toLowerCase()){
+                case 'red':
+                    box3.className = 'boxRed' + ' boxSize ' + 'text-center';
+                    break;
+                
+                case 'blue': 
+                    box3.className = 'boxBlue' + ' boxSize ' + 'text-center';
+                    break;
+        
+                case 'purple': 
+                    box3.className = 'boxPurple' + ' boxSize ' + 'text-center';
+                    break;
+        
+                case 'brown': 
+                    box3.className = 'boxBrown' + ' boxSize ' + 'text-center';
+                    break;
+        
+                case 'yellow': 
+                    box3.className = 'boxYellow' + ' boxSize ' + 'text-center';
+                    break;
+    
+                default:
+                    alert('That is not a valid color. Please enter a valid color.');
+            }
+            break;
+
+        case 'four':
+        case '4':
+            switch(colorInput.toLowerCase()){
+                case 'red':
+                    box4.className = 'boxRed' + ' boxSize ' + 'text-center';
+                    break;
+                
+                case 'blue': 
+                    box4.className = 'boxBlue' + ' boxSize ' + 'text-center';
+                    break;
+        
+                case 'purple': 
+                    box4.className = 'boxPurple' + ' boxSize ' + 'text-center';
+                    break;
+        
+                case 'brown': 
+                    box4.className = 'boxBrown' + ' boxSize ' + 'text-center';
+                    break;
+        
+                case 'yellow': 
+                    box4.className = 'boxYellow' + ' boxSize ' + 'text-center';
+                    break;
+    
+                default:
+                    alert('That is not a valid color. Please enter a valid color.');
+            }
+            break;
+
+        case 'five':
+        case '5':
+            switch(colorInput.toLowerCase()){
+                case 'red':
+                    box5.className = 'boxRed' + ' boxSize ' + 'text-center';
+                    break;
+                
+                case 'blue': 
+                    box5.className = 'boxBlue' + ' boxSize ' + 'text-center';
+                    break;
+        
+                case 'purple': 
+                    box5.className = 'boxPurple' + ' boxSize ' + 'text-center';
+                    break;
+        
+                case 'brown': 
+                    box5.className = 'boxBrown' + ' boxSize ' + 'text-center';
+                    break;
+        
+                case 'yellow': 
+                    box5.className = 'boxYellow' + ' boxSize ' + 'text-center';
+                    break;
+    
+                default:
+                    alert('That is not a valid color. Please enter a valid color.');
+            }
+            break;
+
+        case 'six':
+        case '6':
+            switch(colorInput.toLowerCase()){
+                case 'red':
+                    box6.className = 'boxRed' + ' boxSize ' + 'text-center';
+                    break;
+                
+                case 'blue': 
+                    box6.className = 'boxBlue' + ' boxSize ' + 'text-center';
+                    break;
+        
+                case 'purple': 
+                    box6.className = 'boxPurple' + ' boxSize ' + 'text-center';
+                    break;
+        
+                case 'brown': 
+                    box6.className = 'boxBrown' + ' boxSize ' + 'text-center';
+                    break;
+        
+                case 'yellow': 
+                    box6.className = 'boxYellow' + ' boxSize ' + 'text-center';
+                    break;
+    
+                default:
+                    alert('That is not a valid color. Please enter a valid color.');
+            }
+            break;
+
+        case 'seven':
+        case '7':
+            switch(colorInput.toLowerCase()){
+                case 'red':
+                    box7.className = 'boxRed' + ' boxSize ' + 'text-center';
+                    break;
+                
+                case 'blue': 
+                    box7.className = 'boxBlue' + ' boxSize ' + 'text-center';
+                    break;
+        
+                case 'purple': 
+                    box7.className = 'boxPurple' + ' boxSize ' + 'text-center';
+                    break;
+        
+                case 'brown': 
+                    box7.className = 'boxBrown' + ' boxSize ' + 'text-center';
+                    break;
+        
+                case 'yellow': 
+                    box7.className = 'boxYellow' + ' boxSize ' + 'text-center';
+                    break;
+    
+                default:
+                    alert('That is not a valid color. Please enter a valid color.');
+            }
+            break;
+
+        case 'eight':
+        case '8':
+            switch(colorInput.toLowerCase()){
+                case 'red':
+                    box8.className = 'boxRed' + ' boxSize ' + 'text-center';
+                    break;
+                
+                case 'blue': 
+                    box8.className = 'boxBlue' + ' boxSize ' + 'text-center';
+                    break;
+        
+                case 'purple': 
+                    box8.className = 'boxPurple' + ' boxSize ' + 'text-center';
+                    break;
+        
+                case 'brown': 
+                    box8.className = 'boxBrown' + ' boxSize ' + 'text-center';
+                    break;
+        
+                case 'yellow': 
+                    box8.className = 'boxYellow' + ' boxSize ' + 'text-center';
+                    break;
+    
+                default:
+                    alert('That is not a valid color. Please enter a valid color.');
+            }
+            break;
             
-            case 'blue': 
-                box1.className = 'boxBlue' + ' boxSize ' + 'text-center';
-                break;
-    
-            case 'purple': 
-                box1.className = 'boxPurple' + ' boxSize ' + 'text-center';
-                break;
-    
-            case 'brown': 
-                box1.className = 'boxBrown' + ' boxSize ' + 'text-center';
-                break;
-    
-            case 'yellow': 
-                box1.className = 'boxYellow' + ' boxSize ' + 'text-center';
-                break;
-
-            default:
-                alert('That is not a valid color. Please enter a valid color.');
-        }
     }
-}
 
-function box2Color(){
-    if(boxInput.toLowerCase() == '2' || boxInput.toLowerCase() == 'two' || boxInput.toLowerCase() == 'box 2'){
-        switch(colorInput.toLowerCase()){
-            case 'red':
-                box2.className = 'boxRed' + ' boxSize ' + 'text-center';
-                break;
-            
-            case 'blue': 
-                box2.className = 'boxBlue' + ' boxSize ' + 'text-center';
-                break;
-    
-            case 'purple': 
-                box2.className = 'boxPurple' + ' boxSize ' + 'text-center';
-                break;
-    
-            case 'brown': 
-                box2.className = 'boxBrown' + ' boxSize ' + 'text-center';
-                break;
-    
-            case 'yellow': 
-                box2.className = 'boxYellow' + ' boxSize ' + 'text-center';
-                break;
-
-            default:
-                alert('That is not a valid color. Please enter a valid color.');
-        }
-    }
-}
-
-function box3Color(){
-    if(boxInput.toLowerCase() == '3' || boxInput.toLowerCase() == 'three' || boxInput.toLowerCase() == 'box 3'){
-        switch(colorInput.toLowerCase()){
-            case 'red':
-                box3.className = 'boxRed' + ' boxSize ' + 'text-center';
-                break;
-            
-            case 'blue': 
-                box3.className = 'boxBlue' + ' boxSize ' + 'text-center';
-                break;
-    
-            case 'purple': 
-                box3.className = 'boxPurple' + ' boxSize ' + 'text-center';
-                break;
-    
-            case 'brown': 
-                box3.className = 'boxBrown' + ' boxSize ' + 'text-center';
-                break;
-    
-            case 'yellow': 
-                box3.className = 'boxYellow' + ' boxSize ' + 'text-center';
-                break;
-
-            default:
-                alert('That is not a valid color. Please enter a valid color.');
-        }
-    }
-}
-
-function box4Color(){
-    if(boxInput.toLowerCase() == '4' || boxInput.toLowerCase() == 'four' || boxInput.toLowerCase() == 'box 4'){
-        switch(colorInput.toLowerCase()){
-            case 'red':
-                box4.className = 'boxRed' + ' boxSize ' + 'text-center';
-                break;
-            
-            case 'blue': 
-                box4.className = 'boxBlue' + ' boxSize ' + 'text-center';
-                break;
-    
-            case 'purple': 
-                box4.className = 'boxPurple' + ' boxSize ' + 'text-center';
-                break;
-    
-            case 'brown': 
-                box4.className = 'boxBrown' + ' boxSize ' + 'text-center';
-                break;
-    
-            case 'yellow': 
-                box4.className = 'boxYellow' + ' boxSize ' + 'text-center';
-                break;
-
-            default:
-                alert('That is not a valid color. Please enter a valid color.');
-        }
-    }
-}
-
-function box5Color(){
-    if(boxInput.toLowerCase() == '5' || boxInput.toLowerCase() == 'five' || boxInput.toLowerCase() == 'box 5'){
-        switch(colorInput.toLowerCase()){
-            case 'red':
-                box5.className = 'boxRed' + ' boxSize ' + 'text-center';
-                break;
-            
-            case 'blue': 
-                box5.className = 'boxBlue' + ' boxSize ' + 'text-center';
-                break;
-    
-            case 'purple': 
-                box5.className = 'boxPurple' + ' boxSize ' + 'text-center';
-                break;
-    
-            case 'brown': 
-                box5.className = 'boxBrown' + ' boxSize ' + 'text-center';
-                break;
-    
-            case 'yellow': 
-                box5.className = 'boxYellow' + ' boxSize ' + 'text-center';
-                break;
-
-            default:
-                alert('That is not a valid color. Please enter a valid color.');
-        }
-    }
-}
-
-function box6Color(){
-    if(boxInput.toLowerCase() == '6' || boxInput.toLowerCase() == 'six' || boxInput.toLowerCase() == 'box 6'){
-        switch(colorInput.toLowerCase()){
-            case 'red':
-                box6.className = 'boxRed' + ' boxSize ' + 'text-center';
-                break;
-            
-            case 'blue': 
-                box6.className = 'boxBlue' + ' boxSize ' + 'text-center';
-                break;
-    
-            case 'purple': 
-                box6.className = 'boxPurple' + ' boxSize ' + 'text-center';
-                break;
-    
-            case 'brown': 
-                box6.className = 'boxBrown' + ' boxSize ' + 'text-center';
-                break;
-    
-            case 'yellow': 
-                box6.className = 'boxYellow' + ' boxSize ' + 'text-center';
-                break;
-
-            default:
-                alert('That is not a valid color. Please enter a valid color.');
-        }
-    }
-}
-
-function box7Color(){
-    if(boxInput.toLowerCase() == '7' || boxInput.toLowerCase() == 'seven' || boxInput.toLowerCase() == 'box 7'){
-        switch(colorInput.toLowerCase()){
-            case 'red':
-                box7.className = 'boxRed' + ' boxSize ' + 'text-center';
-                break;
-            
-            case 'blue': 
-                box7.className = 'boxBlue' + ' boxSize ' + 'text-center';
-                break;
-    
-            case 'purple': 
-                box7.className = 'boxPurple' + ' boxSize ' + 'text-center';
-                break;
-    
-            case 'brown': 
-                box7.className = 'boxBrown' + ' boxSize ' + 'text-center';
-                break;
-    
-            case 'yellow': 
-                box7.className = 'boxYellow' + ' boxSize ' + 'text-center';
-                break;
-
-            default:
-                alert('That is not a valid color. Please enter a valid color.');
-        }
-    }
-}
-
-function box8Color(){
-    if(boxInput.toLowerCase() == '8' || boxInput.toLowerCase() == 'eight' || boxInput.toLowerCase() == 'box 8'){
-        switch(colorInput.toLowerCase()){
-            case 'red':
-                box8.className = 'boxRed' + ' boxSize ' + 'text-center';
-                break;
-            
-            case 'blue': 
-                box8.className = 'boxBlue' + ' boxSize ' + 'text-center';
-                break;
-    
-            case 'purple': 
-                box8.className = 'boxPurple' + ' boxSize ' + 'text-center';
-                break;
-    
-            case 'brown': 
-                box8.className = 'boxBrown' + ' boxSize ' + 'text-center';
-                break;
-    
-            case 'yellow': 
-                box8.className = 'boxYellow' + ' boxSize ' + 'text-center';
-                break;
-
-            default:
-                alert('That is not a valid color. Please enter a valid color.');
-        }
-    }else{
-        alert('That is not a valid box number. Please enter a valid box number.')
-    }
 }
