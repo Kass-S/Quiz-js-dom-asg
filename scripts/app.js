@@ -275,5 +275,7 @@ function box8Color(){
             default:
                 alert('That is not a valid color. Please enter a valid color.');
         }
+    }else{
+        alert('That is not a valid box number. Please enter a valid box number.')
     }
 }
