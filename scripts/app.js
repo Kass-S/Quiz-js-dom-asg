@@ -2,7 +2,7 @@
 
 //Id Section
 let boxNumberInput = document.getElementById('boxNumber');
-let boxColorInput = document.getElementById('changeColor');
+let boxColorInput = document.getElementById('changeColors');
 
 let changeColorBtn = document.getElementById('changeColorBtn');
 let resetColorsBtn = document.getElementById('resetColorsBtn');
@@ -68,6 +68,9 @@ function box1Color(){
             case 'yellow': 
                 box1.className = 'boxYellow' + ' boxSize ' + 'text-center';
                 break;
+
+            default:
+                alert('That is not a valid color. Please enter a valid color.');
         }
     }
 }
@@ -94,6 +97,9 @@ function box2Color(){
             case 'yellow': 
                 box2.className = 'boxYellow' + ' boxSize ' + 'text-center';
                 break;
+
+            default:
+                alert('That is not a valid color. Please enter a valid color.');
         }
     }
 }
@@ -120,6 +126,9 @@ function box3Color(){
             case 'yellow': 
                 box3.className = 'boxYellow' + ' boxSize ' + 'text-center';
                 break;
+
+            default:
+                alert('That is not a valid color. Please enter a valid color.');
         }
     }
 }
@@ -146,6 +155,9 @@ function box4Color(){
             case 'yellow': 
                 box4.className = 'boxYellow' + ' boxSize ' + 'text-center';
                 break;
+
+            default:
+                alert('That is not a valid color. Please enter a valid color.');
         }
     }
 }
@@ -172,6 +184,9 @@ function box5Color(){
             case 'yellow': 
                 box5.className = 'boxYellow' + ' boxSize ' + 'text-center';
                 break;
+
+            default:
+                alert('That is not a valid color. Please enter a valid color.');
         }
     }
 }
@@ -180,24 +195,27 @@ function box6Color(){
     if(boxInput.toLowerCase() == '6' || boxInput.toLowerCase() == 'six' || boxInput.toLowerCase() == 'box 6'){
         switch(colorInput.toLowerCase()){
             case 'red':
-                box2.className = 'boxRed' + ' boxSize ' + 'text-center';
+                box6.className = 'boxRed' + ' boxSize ' + 'text-center';
                 break;
             
             case 'blue': 
-                box2.className = 'boxBlue' + ' boxSize ' + 'text-center';
+                box6.className = 'boxBlue' + ' boxSize ' + 'text-center';
                 break;
     
             case 'purple': 
-                box2.className = 'boxPurple' + ' boxSize ' + 'text-center';
+                box6.className = 'boxPurple' + ' boxSize ' + 'text-center';
                 break;
     
             case 'brown': 
-                box2.className = 'boxBrown' + ' boxSize ' + 'text-center';
+                box6.className = 'boxBrown' + ' boxSize ' + 'text-center';
                 break;
     
             case 'yellow': 
-                box2.className = 'boxYellow' + ' boxSize ' + 'text-center';
+                box6.className = 'boxYellow' + ' boxSize ' + 'text-center';
                 break;
+
+            default:
+                alert('That is not a valid color. Please enter a valid color.');
         }
     }
 }
@@ -224,6 +242,9 @@ function box7Color(){
             case 'yellow': 
                 box7.className = 'boxYellow' + ' boxSize ' + 'text-center';
                 break;
+
+            default:
+                alert('That is not a valid color. Please enter a valid color.');
         }
     }
 }
@@ -250,6 +271,9 @@ function box8Color(){
             case 'yellow': 
                 box8.className = 'boxYellow' + ' boxSize ' + 'text-center';
                 break;
+
+            default:
+                alert('That is not a valid color. Please enter a valid color.');
         }
     }
 }
