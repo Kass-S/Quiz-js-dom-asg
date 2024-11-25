@@ -267,6 +267,10 @@ function boxColor(){
                     alert('That is not a valid color. Please enter a valid color.');
             }
             break;
+        
+        default:
+            alert('that is not a valid box. Please enter a valid box number.')
+            break;
             
     }
 
